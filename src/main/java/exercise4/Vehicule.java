@@ -3,7 +3,7 @@ package exercise4;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Vehicule {
+public abstract class Vehicule {
     private String plate;
     private Integer numPassengers;
     private Boolean crew;

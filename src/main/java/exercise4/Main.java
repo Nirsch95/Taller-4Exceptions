@@ -41,7 +41,7 @@ public class Main {
         }
         System.out.println("Ingrese forma de desplazamiento");
         displacement = input.next();
-        Vehicule vehicule = new Vehicule(plate,numPass,crew,numberWheels,date,displacement);
+        Vehicule vehicule = new Vehicule(plate,numPass,crew,numberWheels,date,displacement){};
         vehicules.add(vehicule);
         }while(vehicules.size()<10);
         System.out.println(vehicules);
