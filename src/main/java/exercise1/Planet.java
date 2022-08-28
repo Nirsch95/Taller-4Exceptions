@@ -18,6 +18,16 @@ public class Planet {
         this.distanceSun = distanceSun;
     }
 
+    public static BigDecimal gravitationalForce(Planet planet1, Planet planet2) {
+        BigDecimal G = new BigDecimal("6.67408E-11");
+        BigDecimal m1 = planet1.getMass();
+        BigDecimal m2 = planet2.getMass();
+        BigDecimal d = planet1.getDistanceSun().subtract(planet2.getDistanceSun());
+
+        BigDecimal F = G.multiply((m1.multiply(m2))).divide(d.pow(2), 2, RoundingMode.HALF_EVEN);
+        return F;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -56,16 +66,6 @@ public class Planet {
 
     public void setDistanceSun(BigDecimal distanceSun) {
         this.distanceSun = distanceSun;
-    }
-
-    public static BigDecimal gravitationalForce (Planet planet1, Planet planet2){
-        BigDecimal G = new BigDecimal("6.67408E-11");
-        BigDecimal m1 = planet1.getMass();
-        BigDecimal m2 = planet2.getMass();
-        BigDecimal d = planet1.getDistanceSun().subtract(planet2.getDistanceSun());
-
-        BigDecimal F = G.multiply((m1.multiply(m2))).divide(d.pow(2),2, RoundingMode.HALF_EVEN);
-        return F;
     }
 
     @Override
