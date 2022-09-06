@@ -1,8 +1,10 @@
 package exercise5;
-
-
+/**
+ * Representa el codigo principal de ejecución
+ * Importa las librerias pertinentes
+ * @author Andrés Castro
+ */
 import exercise4.Vehicule;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,6 +12,11 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * La clase principal de ejecución del código, que interactua con el usuario para crear y almacenar los diferentes
+     * vehiculos creados.
+     * @param args
+     */
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

@@ -1,5 +1,9 @@
 package exercise6;
-
+/**
+ * Representa el codigo principal de ejecución
+ * Importa las librerias pertinentes
+ * @author Andrés Castro
+ */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Vector;

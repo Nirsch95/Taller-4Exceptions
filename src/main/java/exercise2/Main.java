@@ -1,5 +1,8 @@
 package exercise2;
-
+/**
+ * Representa el codigo principal de ejecución. Y da respuesta a la pregunta planteada.
+ * @author Andrés Castro
+ */
 public class Main {
     public static void main(String[] args) {
         System.out.println("""

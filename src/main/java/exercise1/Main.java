@@ -1,5 +1,9 @@
 package exercise1;
-
+/**
+ * Representa el codigo principal de ejecución
+ * Importa las librerias pertinentes
+ * @author Andrés Castro
+ */
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -16,7 +20,11 @@ public class Main {
         }
         return index;
     }
-
+    /**
+     * La clase principal de ejecución del código, que interactua con el usuario, para crear planetas y calcular la
+     * fuerza de atracción magnetica.
+     * @param args
+     */
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

@@ -1,11 +1,19 @@
 package exercise3;
-
+/**
+ * Representa el codigo principal de ejecución.
+ * Importa las librerias pertinentes
+ * @author Andrés Castro
+ */
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-
+    /**
+     * Método para aplicar la forma de ordenar mediante la solución por burbuja.
+     * @param random
+     * @return
+     */
     public static ArrayList<Double> bubble(ArrayList<Double> random) {
         int i, j;
         double aux;
@@ -21,6 +29,13 @@ public class Main {
         return random;
     }
 
+    /**
+     * Metodo auxiliar para organizar mediante de quick sort, para ir ubicando poco a poco los valores.
+     * @param array
+     * @param left
+     * @param right
+     * @return
+     */
     private static int partition(ArrayList<Double> array, int left, int right) {
         Double pivot = array.get(left);
         while (true) {
@@ -42,6 +57,13 @@ public class Main {
         }
     }
 
+    /**
+     * Método para aplicar la forma de ordenar mediante la solución por quick sort.
+     * @param random
+     * @param left
+     * @param right
+     * @return
+     */
     public static ArrayList<Double> quickSort(ArrayList<Double> random, int left, int right) {
         if (left < right) {
             int partitionIndex = partition(random, left, right);
@@ -51,7 +73,10 @@ public class Main {
         return random;
     }
 
-
+    /**
+     * La clase principal de ejecución del código, para ordenar el array de la cantidad de números deseados.
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ArrayList<Double> random = new ArrayList<>();
